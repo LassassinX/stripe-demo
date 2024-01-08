@@ -3,7 +3,7 @@
 import Stripe from 'stripe';
 
 export async function handlePayment() {
-	const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
+	const baseUrl = process.env.VERCEL_URL ? `https://stripe-demo-eta.vercel.app` : 'http://localhost:3000';
 	try {
 		const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
 
